@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3: Seleção de seu Tema escolhido.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="titulo">Escolha o tema que mais te interessa!</h1>
+<hr class="linha">
+<div class="container">
+<script>
+let OpcaoTema = prompt(
+    "Qual tema você quer explorar? \n" +
+    "1 - Programação e/ou Jogos \n" +
+    "2 - Design \n" +
+    "3 - Esportes \n" +
+    "4 - História \n"
+);
+
+OpcaoTema = Number(OpcaoTema);
+
+let Tema;
+
+switch (OpcaoTema) {
+  case 1:
+    Tema = "Programação e/ou Jogos";
+    break;
+  case 2:
+    Tema = "Design";
+    break;
+  case 3:
+    Tema = "Esportes";
+    break;
+  case 4:
+    Tema = "História";
+    break;
+  default:
+    Tema = null;
+}
+
+if (Tema === null) {
+    document.write("<h2>Opção inválida, escolha um número de 1 a 4.</h2>");
+} else {
+    document.write("<h2>Seu tema escolhido é: " + Tema + "</h2>");
+    document.write("<p>Continue estudando, lendo e praticando sobre " + Tema + ", explore suas habilidades! Muito sucesso!</p>");
+}
+</script>
+</div>
+</body>
+</html>
